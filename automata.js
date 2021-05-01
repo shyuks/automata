@@ -77,7 +77,7 @@ const nextGeneration = (matrix) => {
   return newMatrix;
 }
 
-// helper function to get total live neighbors
+// helper function to get total live neighbors and adult neighbors
 const getNeighborInfo = (matrix, x, y) => {
   // keep track of all neighbor values;
   const neighborValues = [];
@@ -109,10 +109,7 @@ const getNeighborInfo = (matrix, x, y) => {
   neighborValues.push(bottomMiddle);
 
   const neighborCountSplit = getNeighborCountSplit(neighborValues)
-  const totalLiveNeighbors = neighborCountSplit[0];
-  const toalAdultNeighbors = neighborCountSplit[1];
-
-  return [totalLiveNeighbors, toalAdultNeighbors];
+  return neighborCountSplit;
 }
 
 // take in all the values of the neighbors, decide if we increment total neighbor count and/or adult neighbor count
@@ -232,6 +229,6 @@ const testAnswerThree = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 ]
 
-// console.log(`Test Case One Passes: ${JSON.stringify(computeGenerations(testCaseOne, 1)) === JSON.stringify(testAnswerOne)}`);
-// console.log(`Test Case Two Passes: ${JSON.stringify(computeGenerations(testCaseTwo, 1)) === JSON.stringify(testAnswerTwo)}`);
-// console.log(`Test Case Three Passes: ${JSON.stringify(computeGenerations(testCaseThree, 1)) === JSON.stringify(testAnswerThree)}`);
+console.log(`Test Case One Passes: ${JSON.stringify(computeGenerations(testCaseOne, 1)) === JSON.stringify(testAnswerOne)}`);
+console.log(`Test Case Two Passes: ${JSON.stringify(computeGenerations(testCaseTwo, 1)) === JSON.stringify(testAnswerTwo)}`);
+console.log(`Test Case Three Passes: ${JSON.stringify(computeGenerations(testCaseThree, 1)) === JSON.stringify(testAnswerThree)}`);
