@@ -229,6 +229,6 @@ const testAnswerThree = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 ]
 
-console.log(`Test Case One Passes: ${JSON.stringify(computeGenerations(testCaseOne, 1)) === JSON.stringify(testAnswerOne)}`);
-console.log(`Test Case Two Passes: ${JSON.stringify(computeGenerations(testCaseTwo, 1)) === JSON.stringify(testAnswerTwo)}`);
-console.log(`Test Case Three Passes: ${JSON.stringify(computeGenerations(testCaseThree, 1)) === JSON.stringify(testAnswerThree)}`);
+// console.log(`Test Case One Passes: ${JSON.stringify(computeGenerations(testCaseOne, 1)) === JSON.stringify(testAnswerOne)}`);
+// console.log(`Test Case Two Passes: ${JSON.stringify(computeGenerations(testCaseTwo, 1)) === JSON.stringify(testAnswerTwo)}`);
+// console.log(`Test Case Three Passes: ${JSON.stringify(computeGenerations(testCaseThree, 1)) === JSON.stringify(testAnswerThree)}`);
